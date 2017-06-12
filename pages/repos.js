@@ -6,7 +6,7 @@ class Repos extends React.Component {
   render(){
     return(
       <div>
-        <HeroBanner />
+        <HeroBanner id={this.props.url.query.id} orgName={this.props.url.query.orgName} />
       </div>
     )
   }
