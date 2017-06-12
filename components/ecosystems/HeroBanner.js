@@ -14,7 +14,7 @@ const BannerWrapper = styled(Container)`
 `
 
 const TranspalentCard = styled(Card)`
-    opacity: 0.7;
+    opacity: 1;
 `
 
 const HeroBanner = ({ id, orgName, repoData }) => (
@@ -23,10 +23,10 @@ const HeroBanner = ({ id, orgName, repoData }) => (
             <Grid.Row>
                 <Grid.Column>
                     <TranspalentCard centered
-                        image='https://www.atomix.com.au/media/2015/06/atomix_user31.png'
-                        header='Elliot Bakerr'
-                        meta='Friend'
-                        description={JSON.stringify(repoData)}
+                        image="https://www.atomix.com.au/media/2015/06/atomix_user31.png"
+                        header={repoData.full_name}
+                        meta={repoData.language}
+                        description={repoData.description}
                     />
                 </Grid.Column>
             </Grid.Row>

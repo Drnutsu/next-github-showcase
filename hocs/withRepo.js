@@ -31,6 +31,7 @@ const withRepo = (ComposedComponent) => {
             })
             } else {
             const repo = _.find(data, (o) => { return o.id == id })
+            console.log("Repo :: ", repo)
             this.setState({
                 repoFetchStatus: STATUS.SUCCESS,
                 repoErrorMessage: '',
